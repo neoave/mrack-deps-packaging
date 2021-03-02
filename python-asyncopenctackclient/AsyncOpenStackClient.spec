@@ -11,15 +11,12 @@ URL:            https://github.com/DreamLab/AsyncOpenStackClient
 Source0:        %{pypi_source}
 BuildArch:      noarch
 
-### Patches ###
-Patch0001:  0001-Unpin-requirements.patch
-
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(aiohttp) >= 3
-BuildRequires:  python3dist(python-dateutil) >= 2.8
-BuildRequires:  python3dist(setuptools)
-BuildRequires:  python3dist(simple-rest-client) >= 0.5.4
-BuildRequires:  python3dist(simplejson) >= 3.16
+BuildRequires:  python3-aiohttp
+BuildRequires:  python3-dateutil
+BuildRequires:  python3-setuptools
+BuildRequires:  python3-simple-rest-client
+BuildRequires:  python3-simplejson
 
 %description
 The AsyncOpenStackClient is a asynchronous rest wrapper for the OpenStack API.
@@ -29,10 +26,10 @@ It provides a nice abstraction for authentication.
 Summary:        %{summary}
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
-Requires:       python3dist(aiohttp) >= 3
-Requires:       python3dist(python-dateutil) >= 2.8
-Requires:       python3dist(simple-rest-client) >= 0.5.4
-Requires:       python3dist(simplejson) >= 3.16
+Requires:       python3-aiohttp
+Requires:       python3-dateutil
+Requires:       python3-simple-rest-client
+Requires:       python3-simplejson
 %description -n python3-%{pypi_name}
 The AsyncOpenStackClient is a asynchronous rest wrapper for the OpenStack API.
 It provides a nice abstraction for authentication.

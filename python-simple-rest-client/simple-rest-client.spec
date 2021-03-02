@@ -12,16 +12,16 @@ Source0:        %{pypi_source}
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(coveralls)
-BuildRequires:  python3dist(httpx) >= 0.16.1
-BuildRequires:  python3dist(pytest)
-BuildRequires:  python3dist(pytest-asyncio)
-BuildRequires:  python3dist(pytest-cov)
-BuildRequires:  python3dist(pytest-httpserver)
-BuildRequires:  python3dist(pytest-runner)
-BuildRequires:  python3dist(python-slugify) >= 4
-BuildRequires:  python3dist(python-status) >= 1.0.1
-BuildRequires:  python3dist(setuptools)
+BuildRequires:  python3-coveralls
+BuildRequires:  python3-httpx
+BuildRequires:  python3-pytest
+BuildRequires:  python3-pytest-asyncio
+BuildRequires:  python3-pytest-cov
+BuildRequires:  python3-pytest-httpserver
+BuildRequires:  python3-pytest-runner
+BuildRequires:  python3-slugify
+BuildRequires:  python3-status
+BuildRequires:  python3-setuptools
 
 %description
 Simple REST client for python 3.6+.
@@ -30,9 +30,9 @@ Simple REST client for python 3.6+.
 Summary:        %{summary}
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
-Requires:       python3dist(httpx) >= 0.16.1
-Requires:       python3dist(python-slugify) >= 4
-Requires:       python3dist(python-status) >= 1.0.1
+Requires:       python3-httpx
+Requires:       python3-slugify
+Requires:       python3-status
 %description -n python3-%{pypi_name}
 Simple REST client for python 3.6+.
 

@@ -12,7 +12,7 @@ Source0:        %{pypi_source}
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(setuptools)
+BuildRequires:  python3-setuptools
 
 %description
 Typing -- Type Hints for Python is a backport of the standard library

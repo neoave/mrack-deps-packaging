@@ -12,29 +12,28 @@ Source0:        https://files.pythonhosted.org/packages/source/p/%{pypi_name}/py
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(autopep8)
-BuildRequires:  python3dist(coverage)
-BuildRequires:  python3dist(coverage)
-BuildRequires:  python3dist(flake8)
-BuildRequires:  python3dist(ipdb)
-BuildRequires:  python3dist(pytest)
-BuildRequires:  python3dist(pytest)
-BuildRequires:  python3dist(pytest)
-BuildRequires:  python3dist(pytest-cov)
-BuildRequires:  python3dist(pytest-cov)
-BuildRequires:  python3dist(pytest-runner)
-BuildRequires:  python3dist(reno)
-BuildRequires:  python3dist(requests)
-BuildRequires:  python3dist(requests)
-BuildRequires:  python3dist(requests)
-BuildRequires:  python3dist(rope)
-BuildRequires:  python3dist(setuptools)
-#BuildRequires:  python3dist(sphinx)
-BuildRequires:  python3dist(sphinx-rtd-theme)
-BuildRequires:  python3dist(typing)
-BuildRequires:  python3dist(werkzeug)
-BuildRequires:  python3dist(wheel)
-BuildRequires:  python3dist(sphinx)
+BuildRequires:  python3-autopep8
+BuildRequires:  python3-coverage
+BuildRequires:  python3-coverage
+BuildRequires:  python3-flake8
+BuildRequires:  python3-ipdb
+BuildRequires:  python3-pytest
+BuildRequires:  python3-pytest
+BuildRequires:  python3-pytest
+BuildRequires:  python3-pytest-cov
+BuildRequires:  python3-pytest-cov
+BuildRequires:  python3-pytest-runner
+BuildRequires:  python3-reno
+BuildRequires:  python3-requests
+BuildRequires:  python3-requests
+BuildRequires:  python3-requests
+BuildRequires:  python3-rope
+BuildRequires:  python3-setuptools
+# BuildRequires:  python3-sphinx
+# BuildRequires:  python3-sphinx-rtd-theme
+BuildRequires:  python3-typing
+BuildRequires:  python3-werkzeug
+BuildRequires:  python3-wheel
 
 %description
 This library is designed to help to test http clients without contacting the
@@ -46,13 +45,12 @@ their responses.
 Summary:        %{summary}
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
-Requires:       python3dist(coverage)
-Requires:       python3dist(pytest)
-Requires:       python3dist(pytest-cov)
-Requires:       python3dist(requests)
-Requires:       python3dist(setuptools)
-#Requires:       python3dist(typing)
-Requires:       python3dist(werkzeug)
+Requires:       python3-coverage
+Requires:       python3-pytest
+Requires:       python3-pytest-cov
+Requires:       python3-requests
+Requires:       python3-setuptools
+Requires:       python3-werkzeug
 %description -n python3-%{pypi_name}
 This library is designed to help to test http clients without contacting the
 real http server. In other words, it is a fake http server which is accessible

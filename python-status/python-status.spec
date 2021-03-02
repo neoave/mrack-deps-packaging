@@ -13,7 +13,7 @@ Source0:        %{pypi_source python-status}
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(setuptools)
+BuildRequires:  python3-setuptools
 
 %description
 status is a very simple python library which provides human understandable HTTP
