@@ -18,7 +18,7 @@ BuildRequires:  python3-devel
 BuildRequires:  python3dist(aiohttp) >= 3
 BuildRequires:  python3dist(python-dateutil) >= 2.8
 BuildRequires:  python3dist(setuptools)
-BuildRequires:  python3dist(simple-rest-client) >= 0.5.4
+BuildRequires:  python3dist(simple-rest-client) == 0.5.4
 BuildRequires:  python3dist(simplejson) >= 3.16
 
 %description
@@ -31,7 +31,7 @@ Summary:        %{summary}
 
 Requires:       python3dist(aiohttp) >= 3
 Requires:       python3dist(python-dateutil) >= 2.8
-Requires:       python3dist(simple-rest-client) >= 0.5.4
+Requires:       python3dist(simple-rest-client) == 0.5.4
 Requires:       python3dist(simplejson) >= 3.16
 %description -n python3-%{pypi_name}
 The AsyncOpenStackClient is a asynchronous rest wrapper for the OpenStack API.
