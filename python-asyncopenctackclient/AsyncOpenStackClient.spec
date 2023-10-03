@@ -2,7 +2,7 @@
 %global pypi_name AsyncOpenStackClient
 
 Name:           python-%{pypi_name}
-Version:        0.8.1
+Version:        0.9.0
 Release:        1%{?dist}
 Summary:        Basic OpenStack async client library using asyncio
 
@@ -55,5 +55,8 @@ rm -rf %{pypi_name}.egg-info
 %{python3_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
 
 %changelog
+* Tue Oct 03 2023 Petr Vobornik <pvoborni@redhat.com> - 0.9.0-1
+- Update to version 0.9.0
+
 * Wed Feb 03 2021 Armando Neto <abiagion@redhat.com> - 0.8.1-1
 - Initial package.
