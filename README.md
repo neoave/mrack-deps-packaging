@@ -20,13 +20,6 @@ mrack
         └── python3-status
 ```
 
-Not required currently:
-
-```
-python3-pytest-httpserver
-└── python3-typing
-```
-
 # How to update a package
 
 E.g. when `python-asyncopenctackclient` was updated to `0.9.0`. In the
